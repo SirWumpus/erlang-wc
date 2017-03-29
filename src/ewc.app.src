@@ -1,0 +1,9 @@
+{application,ewc,
+             [{pkg_name,"ewc"},
+              {vsn,"1.0.0"},
+              {description,"Erlang version of wc(1)"},
+              {links,[{"Github","https://github.com/SirWumpus/erlang-wc"}]},
+              {applications,[kernel,stdlib,ebs,egetopt]},
+              {licenses,["MIT"]},
+              {modules,[ewc]},
+              {files,["README.md","makefile","rebar.config","src","test"]}]}.
