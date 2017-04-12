@@ -48,7 +48,7 @@ process_files(Opts, [File | Rest]) ->
 		file:close(Fp)
 	catch
 		throw:{error, Reason} ->
-			io:format(standard_error, "ecat: ~s: ~s~n", [File, str:error(Reason)]),
+			io:format(standard_error, "ewc: ~s: ~s~n", [File, str:error(Reason)]),
 			halt(1)
 	end,
 	process_files(Opts, Rest).
